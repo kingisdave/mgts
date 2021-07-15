@@ -1,0 +1,227 @@
+*{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  /*background: #ffe5f2 !important;*/
+	background: #fff;
+}
+#conta{
+  background: #fff !important;
+  border-radius: 25px;
+}
+.wrapper .userPix{
+  position: fixed;
+  left: 4vh;
+  bottom: 13vh;
+}
+.wrapper .hamburger{
+  width: 30px;
+  padding: 15px 17px;
+  cursor: pointer; 
+  position: fixed;
+  left: 3vh;
+  bottom: 5vh;
+}
+
+.wrapper .hamburger div{
+  width: 20px;
+  height: 2px;
+  background: #2F2E41 !important;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.navbar-brand{
+  font-size: 85%
+}
+.navbar-brand.active{
+  margin-left: 7px;
+}
+.wrapper .sidebar{
+  position: fixed;
+  top: 5px;
+  padding: 0 !important;
+  left: 0px;
+  background: #fff !important;
+  width: 180px;
+  height: calc(100% - 5px);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all 0.8s ease;
+}
+
+.wrapper .sidebar ul{
+  padding: 0 5px;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 15px;
+  position: relative;
+  font-size: 80%;
+  margin-bottom: 1px;
+  color: #2F2E41 !important;
+  white-space: nowrap;
+}
+
+.wrapper .sidebar ul li a:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 3px; */
+  height: 100%;
+  background: #92a6e2;
+  display: none; 
+}
+
+.wrapper .sidebar ul li a .icon{
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title{
+  display: inline-block;
+  justify-content: center;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  /*background: #ffe6e6;*/
+  background: #2F2E41 !important;
+  /*color: #732626;*/
+  color: #fff !important;
+  border-left: 2px solid #2F2E41;
+  text-shadow: 2px 1px #2F2E41;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+  display: block;
+}
+
+.wrapper .main_container{
+  width: calc(100% - 170px);
+  margin-top: 0px;
+  margin-left: 170px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.main_container ul li a{
+  color: #2F2E41;
+}
+.main_container ul li a sup{
+  position: relative;
+  font-size: 10px;
+  right: 13px;
+  top: -13px;
+}
+/*.main_container ul li span.h4{
+  position: relative;
+  right: -5px;
+  top: 3px;
+}*/
+
+.wrapper.active .sidebar{
+  width: 70px;
+}
+
+.wrapper.active .sidebar ul li a{
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.wrapper.active .sidebar ul li a span.icon{
+  margin: 0;
+}
+
+.wrapper.active .sidebar ul li a span.title{
+	margin-left: -7px;
+  display: block;
+  font-size: 7.4px;
+  text-decoration: none;
+  font-weight: lighter;
+  /* display: none; */
+} 
+
+.wrapper.active .main_container{
+  width: calc(100% - 70px);
+  margin-left: 70px;
+}
+
+#searcher {
+  width: 13px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  float: right;
+  background-color: white;
+  background-image: url('../images/searchicon.png');
+  background-position: right; 
+  background-repeat: no-repeat;
+  padding: 5px 10px 5px 15px;
+  transition: width 0.7s ease-in-out;
+}
+
+#searcher:focus {
+  width: 90%;
+}
+
+/* .main_container .navSearch:hover, 
+  .main_container .navSearch:focus{
+    display:inline-block;    
+}
+.main_container .navSearch input, 
+  .main_container .navSearch input{
+    display: none;
+} */
+.main_container .navNotify{
+  max-width: 20%;
+}
+.main_container .navUser{
+  max-width: 30%;
+}
+.main_container div.container-fluid{
+  padding: 0;
+}
+.main_container .navUser ul.profileDrop {
+  min-width: 7px;
+
+}
+/* .main_container div.container-fluid nav{
+  width: 400px;
+} */
+
+
+.mytable{
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.pies {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mycard{
+  background: #2F2E41 !important;
+  color: #fff !important;
+}
+@media screen(min-width:600px) {
+  .wrapper .main_container nav li{
+    height: 30px;
+  }
+}

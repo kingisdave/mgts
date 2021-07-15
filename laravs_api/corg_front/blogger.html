@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" http-equiv="Content-Type" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="CoderDevs">
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+    <link rel="icon" href="./assets/images/flash-banner.png" type="image/x-icon" />
+    <title>Showbiz</title>
+    
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css">
+    <script type="text/javascript" src="https://cdn.ckeditor.com/ckeditor5/19.1.1/classic/ckeditor.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/ecommerce.css"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script> -->
+    <!-- <script src="../bootstrap-4.3.1/dist/jquery3.3.1.js"></script> -->
+    <!-- <script src="../bootstrap-4.3.1/dist/popper.js"></script>
+    <script src="../bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script> -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+    <style type="text/css">
+        /* #conta{
+			margin-top: 0px;
+            background: #b3e6ff !important;
+            background: #e6eeff;
+            background: radial-gradient(circle, #e6eeff, #8cb7d4af, #e6eeff);
+			border-radius: 25px;
+			height: 90vh;
+		}     */
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <div class="">
+                <div class="d-flex bd-highlight">
+                    <img src="./assets/images/flash-banner.png" class="bannerImg me-auto" alt="banner" width="170" height="70" />
+                    <div class="d-none d-sm-inline">
+                        <div class="p-3 form-group bd-highlight">
+                            <input type="search" class="form-control me-2" placeholder="Search" />
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link text-reset mt-2" href="#" data-bs-toggle="modal" data-bs-target="#signModal">
+                                    <i class="fa fa-user me-2 d-none d-sm-inline"></i> Sign in
+                                </a>
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div> -->
+    <div class="wrapper container-fluid" id="conta">
+		<div class="container-fluid" id='mySidenav'>
+			<div class="sidebar">
+				
+				<ul>
+                    <li>
+                        <a href="./admin.html" class="active">
+							<span class="icon">
+								<i class="fa fa-home" aria-hidden="true"></i>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="./blogger.html">
+							<span class="icon">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="title">Posts</span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="#">
+							<span class="icon">
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="title">Your Store</span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="#">
+							<span class="icon">
+								<i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <span class="title">Your Wallet</span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="#">
+							<span class="icon">
+								<i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            </span>
+                            <span class="title">Analytics</span>
+						</a>
+                    </li>
+                    <li>
+                        <a href="#">
+							<span class="icon">
+								<i class="fa fa-gear" aria-hidden="true"></i>
+                            </span>
+                            <span class="title">Account Setting</span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="#">
+							<span class="icon">
+								<i class="fa fa-history" aria-hidden="true"></i>
+                            </span>
+                            <span class="title">Update Policy</span>
+                        </a>
+                    </li>
+				</ul>
+				<div class="hamburger" id='mytoggler'>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div class="main_container">
+            <div class="d-flex" id="dashboardTopNav" style="background: #0066cc; box-shadow: 2px 0px 3px #000;">
+                <a href="#" class="me-auto" id="topbrand">
+                    <img src="./assets/images/flash-banner.png" class="bannerImg me-auto" alt="banner" width="170" height="70" />
+                </a>
+                <ul class="nav m-2">
+                    <form class="navbar-form navbar-left m-2 d-none d-sm-inline">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" />
+                        <div class="input-group-btn">
+                          <button class="btn btn-outline-danger bg-light border" type="submit">
+                            <i class="fa fa-search text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <li class="nav-item dropdown m-2">
+                        <a class="nav-brand dropdown-toggle text-white" href="#" id="dropNavLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="h4 fa fa-user-circle"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropNavLink">
+                            <h5 class="dropdown-header">Dashboard</h5>
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <h5 class="dropdown-header">Videos</h5>
+                            <a class="dropdown-item" href="#">Links</a>
+                            <a class="dropdown-item" href="#">Privacy</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </li>      	
+                </ul>
+            </div>
+			<div class="container-fluid dashboardBorder pt-2">
+                <div class="text-center">
+                    <h2 class="fw-bolder mt-2">Blog Section</h2>
+                    <p class="fst-italic">This is the blog section.</p>
+                    
+                    <button type="button" class="btn btn-primary addBtn text-white" data-bs-toggle="modal" data-bs-target="#bloggersModal">Add new blog</button>
+                    <p><a href="./blogpage.html" class="small">Click here to go to Blog page</a></p>
+                </div>
+                <hr />
+                <div class="row blogsRows">
+                    <h5 class="col-md-9 col-8 fw-bolder">Posted Blogs</h5>
+                    <div class="col-md-3 col-4 form-group mb-1">
+                        <select class="form-control">
+                            <option value="all">All</option>
+                            <option value="sports">Sports</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="health">Health</option>
+                            <option value="education">Education</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="card my-2 mx-1 shadow bloggerCard">
+                            <img src="./assets/images/livingRoomOne.jpg" alt="lroom" class="img-fluid bloggerImg" />
+                            <div class="d-flex p-1">
+                                <p class="small"><small><i class="fa fa-eye"></i>111 views</small></p>
+                                <p class="small mx-auto"><small><i class="fa fa-heart text-danger"></i>10 likes</small></p>
+                                <p class="small ms-auto"><small><i class="fa fa-commenting text-primary"></i>2 comments</small></p>
+                            </div>
+                            <div class="card-body">
+                                <p class="small"><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Am
+                                    et voluptates eveniet architecto beatae cum sint, numquam fu
+                                    ga cupiditate odio, alias sunt ab consequatur blanditiis modi
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="card my-2 mx-1 shadow bloggerCard">
+                            <img src="./assets/images/livingRoomOne.jpg" alt="lroom" class="img-fluid bloggerImg" />
+                            <div class="d-flex p-1">
+                                <p class="small"><small><i class="fa fa-eye"></i>111 views</small></p>
+                                <p class="small mx-auto"><small><i class="fa fa-heart text-danger"></i>10 likes</small></p>
+                                <p class="small ms-auto"><small><i class="fa fa-commenting text-primary"></i>2 comments</small></p>
+                            </div>
+                            <div class="card-body">
+                                <p class="small"><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Am
+                                    et voluptates eveniet architecto beatae cum sint, numquam fu
+                                    ga cupiditate odio, alias sunt ab consequatur blanditiis modi
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="card my-2 mx-1 shadow bloggerCard">
+                            <img src="./assets/images/livingRoomOne.jpg" alt="lroom" class="img-fluid bloggerImg" />
+                            <div class="d-flex p-1">
+                                <p class="small"><small><i class="fa fa-eye"></i>111 views</small></p>
+                                <p class="small mx-auto"><small><i class="fa fa-heart text-danger"></i>10 likes</small></p>
+                                <p class="small ms-auto"><small><i class="fa fa-commenting text-primary"></i>2 comments</small></p>
+                            </div>
+                            <div class="card-body">
+                                <p class="small"><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Am
+                                    et voluptates eveniet architecto beatae cum sint, numquam fu
+                                    ga cupiditate odio, alias sunt ab consequatur blanditiis modi
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="card my-2 mx-1 shadow bloggerCard">
+                            <img src="./assets/images/livingRoomOne.jpg" alt="lroom" class="img-fluid bloggerImg" />
+                            <div class="d-flex p-1">
+                                <p class="small"><small><i class="fa fa-eye"></i>111 views</small></p>
+                                <p class="small mx-auto"><small><i class="fa fa-heart text-danger"></i>10 likes</small></p>
+                                <p class="small ms-auto"><small><i class="fa fa-commenting text-primary"></i>2 comments</small></p>
+                            </div>
+                            <div class="card-body">
+                                <p class="small"><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Am
+                                    et voluptates eveniet architecto beatae cum sint, numquam fu
+                                    ga cupiditate odio, alias sunt ab consequatur blanditiis modi
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- The add new blog Modal -->
+                <div class="modal fade" id="bloggersModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="container-fliud">
+                                    <h5 class="text-center">Add New Blog</h5>
+                                    <div class="card m-1 border-0 shadow">
+                                        <div class="card-body">
+                                            <form class="row">
+                                                <div class="col-md-4 col-12 p-2">
+                                                    Blog Category :
+                                                </div>
+                                                <div class="col-md-8 col-12 form-group p-2 mb-1">
+                                                    <select class="form-control">
+                                                        <option value="new">Add New</option>
+                                                        <option value="agriculture">Agriculture</option>
+                                                        <option value="education">Education</option>
+                                                        <option value="health">Health</option>
+                                                        <option value="politics">Politics</option>
+                                                        <option value="sports">Sports</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4 col-12 p-2">
+                                                    Blog Title :
+                                                </div>
+                                                <div class="col-md-8 col-12 form-group p-2 mb-1">
+                                                    <input type="text" class="form-control" name="blogtitle" placeholder="The rise of ..." />
+                                                </div>
+                                                <div class="col-md-4 col-12 p-2">
+                                                    Subtitle :
+                                                </div>
+                                                <div class="col-md-8 col-12 form-group p-2 mb-1">
+                                                    <input type="text" class="form-control" name="subtitle" placeholder="How did he..." />
+                                                </div>
+                                                <div id="editor">
+                                                    Write your blog here...
+                                                </div>
+                                                <script>
+                                                    ClassicEditor
+                                                        .create(document.querySelector('#editor'))
+                                                        .then( editor => {
+                                                            console.log( editor );
+                                                        })
+                                                        .catch(error => {
+                                                            console.error( error );
+                                                        })
+                                                </script>
+                                                <button class="btn btn-sm btn-primary float-right">Post</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer details -->
+            <div class="footerDiv text-center">
+                <p>@Showbiz &copy; 2021 </p>
+            </div>
+		</div>
+    </div>
+    <!-- <script src="../bootstrap-4.3.1/dist/popper.js"></script> -->
+    <script src="../bootstrap-5.0.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

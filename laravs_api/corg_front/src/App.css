@@ -1,0 +1,212 @@
+.App {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+.backColor {
+  background-color: #f2f2f2 !important;
+}
+.btnColor {
+  background-color: #2F2E41 !important;
+}
+
+.navBrand {
+  font-family: Roboto; 
+  color: #2F2E41 !important;
+  font-weight: 700;
+}
+.backColor li .nav-link {
+  font-size: smaller;
+  color: #2F2E41 !important;
+}
+
+.backColor li .navyLi:hover, .backColor li .navyLi:focus {
+  color: #040624 !important;
+  text-shadow: 1px 1px 1px #090447;
+  border-bottom: 4px solid #040624 !important;
+}
+.backColor li .nav-link.btn:hover, .backColor li .nav-link.btn:hover {
+  color: #fff !important;
+}
+.cardRound {
+  border-radius: 0;
+  border-top-left-radius:  5px;
+  border-bottom-right-radius: 5px;
+}
+
+.firstDisplay {
+  color: #2F2E41 !important;
+  height: 80vh;
+  padding: 7vh 10vh !important;
+}
+.firstDisplay h1{
+  margin-top: 8vh;
+  font-weight: 800;
+  font-size: 2.3em;
+}
+.firstDisplay p.smallText{
+  font-weight: 600;
+}
+
+.firstDisplay button{
+  /* font-size: small; */
+  border: 0;
+  color: #fff !important;
+  padding: auto 14px;
+  background-color: #2F2E41;
+  box-shadow: 2px 2px 4px rgb(2, 15, 17);
+}
+.firstDisplay button:focus, .firstDisplay button:hover{
+  background-color: #575A89;
+  box-shadow: 0 4px 8px 0 rgba(8, 5, 53, 0.561), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.frontImg{
+  background: url("./components/assets/images/svgs/connection_online.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.secBackground{
+  height: 80vh;
+}
+.secBackground .secondBg{
+  padding: 0 !important;
+  margin-top: 10% !important;
+}
+.secBackground .newSecondBg{
+  background: linear-gradient(to left, #2f2e41 -6%, #575a89 85%);
+  height: 70%;
+}
+.secBackground .anotherSecBg{
+  position: absolute;
+  margin-top: 8% !important;
+}
+
+.secBackground .anotherSecBg .deskContainer{
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.anotherSecBg  .mycards .card{
+  height: 55vh;
+  width: 250px;
+  margin: 5px 15px !important;
+  flex-shrink: 0;
+  box-shadow: 10px 10px 4px #080808;
+  /* background: linear-gradient(to top, #7d7c8a 0%, #F5F5F5 100%); */
+  background-color: transparent;
+  perspective: 1000px;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.anotherSecBg .mycards .card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background: radial-gradient(circle, #f3f1f4 0%, #F5F5F5 100%);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+div.secLeft {
+  float: left;
+  width: 75%;
+  -ms-transform: skewY(-10deg);
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
+div.secRight {
+  float: right;
+  width: 25%;
+  margin-top: -3.2% !important;
+  -ms-transform: skewY(15deg);
+  -webkit-transform: skewY(15deg);
+  transform: skewY(15deg);
+}
+
+.thirdBackground{
+  height: 50vh;
+  background: linear-gradient(to left, #2f2e41 -6%, #575a89 85%);
+}
+.thirdBackground .container{
+  display: flex;
+  justify-content: space-around;
+}
+.thirdBackground .smallcards .insideCard{
+  padding: 22%;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #ffffff !important;
+  border-radius: 50%;
+}
+
+div.fourthBackground{
+  height: 80vh;
+  background: radial-gradient(circle, #f3f1f4 0%, #F5F5F5 100%);
+}
+
+.loginCard{
+  background: #2F2E41 !important;
+  font-size: smaller;
+}
+.loginCard .butn{
+  color: #2F2E41 !important;
+}
+.signUpBtn{
+  background-color: #212529 !important;
+}
+
+.showPassBtn{
+  position: absolute;
+  right: 1%;
+  bottom: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .firstDisplay { padding: 7vh 3vh !important; }
+}
+
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */
+
